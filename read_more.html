@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional Read More Example</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.6;
+            color: #e0e0e0;
+            background-color: #121212;
+        }
+        
+        .content-card {
+            background: #1e1e1e;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+            padding: 25px;
+            margin-bottom: 30px;
+            border: 1px solid #333;
+        }
+        
+        .content-card h2 {
+            color: #f5f5f5;
+            margin-top: 0;
+        }
+        
+        .content-preview {
+            position: relative;
+            overflow: hidden;
+            transition: max-height 0.5s ease;
+            color: #b0b0b0;
+        }
+        
+        .content-preview.collapsed {
+            max-height: 100px;
+        }
+        
+        .content-preview.expanded {
+            max-height: 2000px;
+        }
+        
+        .content-preview.collapsed::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 50px;
+            background: linear-gradient(to bottom, rgba(30, 30, 30, 0), #1e1e1e);
+        }
+        
+        .btn {
+            display: inline-block;
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 4px;
+            text-decoration: none;
+            font-weight: 500;
+            margin-top: 15px;
+            border: none;
+            cursor: pointer;
+            transition: all 0.3s;
+            border: 1px solid #444;
+        }
+        
+        .btn:hover {
+            background-color: #444;
+            color: #fff;
+        }
+        
+        .btn:focus {
+            outline: none;
+            box-shadow: 0 0 0 3px rgba(100, 100, 100, 0.3);
+        }
+
+        ul {
+            color: #b0b0b0;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+    </style>
+</head>
+<body>
+    <div class="content-card">
+        <h2>Article Title</h2>
+        <div class="content-preview collapsed" id="contentPreview">
+            <p> I’m a dedicated and creative Frontend Developer with a passion for building responsive and user-friendly web interfaces. With a strong background in HTML, CSS, JavaScript, and a growing command over modern frameworks, I strive to craft seamless digital experiences that leave a lasting impression.</p>
+            <div class="hidden-content">
+                <p>My journey in web development began with a curiosity for how things work behind the screen, which quickly turned into a deep interest in building interactive and visually appealing websites. Over time, I’ve honed my skills not only through academic projects but also real-world applications, including my Final Year Project “VEMS360” — a comprehensive virtual event management system.</p>
+                <p>I enjoy solving problems, collaborating in teams, and constantly learning new technologies to keep up with the evolving tech landscape. Whether it's designing pixel-perfect layouts or optimizing site performance, I take pride in every line of code I write.</p>
+                <ul>
+                    <li>Strong command in HTML, CSS, JavaScript, and Bootstrap</li>
+                    <li>Experience with PHP, MySQL, and PHPMailer integration</li>
+                    <li>Capable of designing responsive, cross-browser compatible interfaces</li>
+                </ul>
+                <p>Beyond coding, I’m passionate about UI/UX, clean design, and creating meaningful user experiences. My goal is to contribute to impactful projects and grow as a professional in the web development industry.</p>
+            </div>
+            
+            </div>
+        </div>
+        <button class="btn" id="readMoreBtn">Read More</button>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const readMoreBtn = document.getElementById('readMoreBtn');
+            const contentPreview = document.getElementById('contentPreview');
+            
+            readMoreBtn.addEventListener('click', function() {
+                if (contentPreview.classList.contains('collapsed')) {
+                    // Expand the content
+                    contentPreview.classList.remove('collapsed');
+                    contentPreview.classList.add('expanded');
+                    readMoreBtn.textContent = 'Read Less';
+                } else {
+                    // Collapse the content
+                    contentPreview.classList.remove('expanded');
+                    contentPreview.classList.add('collapsed');
+                    readMoreBtn.textContent = 'Read More';
+                }
+            });
+        });
+    </script>
+</body>
+</html>
