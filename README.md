@@ -1,4 +1,4 @@
-💼 Laiba Saleem - Personal Portfolio Website
+💼 Laiba Saleem - Portfolio Website
 
 Welcome to my personal portfolio website! This project showcases my skills, projects, and professional profile as a Web Developer and UI/UX Designer.
 
