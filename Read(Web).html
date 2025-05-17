@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Development Services</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+        
+        body {
+            background-color: #1f242d;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        
+        .service-header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+        
+        .service-header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+            color: #0ef;
+        }
+        
+        .service-header p {
+            font-size: 1.1rem;
+            color: #ffffff;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+        
+        .service-details {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            margin-bottom: 50px;
+        }
+        
+        .service-content {
+            flex: 1;
+            min-width: 300px;
+            background: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+        
+        .service-image {
+            flex: 1;
+            min-width: 300px;
+            background: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .service-image img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+        
+        h2 {
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+            color: #0ef;
+        }
+        
+        h3 {
+            font-size: 1.4rem;
+            margin: 25px 0 15px;
+            color: #333;
+        }
+        
+        ul {
+            margin-left: 20px;
+            margin-bottom: 20px;
+        }
+        
+        li {
+            margin-bottom: 10px;
+        }
+        
+        .tech-stack {
+            margin-top: 40px;
+        }
+        
+        .tech-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+            gap: 15px;
+            margin-top: 20px;
+        }
+        
+        .tech-item {
+            background: #f0f0f0;
+            padding: 10px;
+            border-radius: 5px;
+            text-align: center;
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+        
+        .tech-item:hover {
+            background: #0ef;
+            color: #fff;
+            transform: translateY(-3px);
+        }
+        
+        .btn {
+            display: inline-block;
+            padding: 10px 25px;
+            background: #0ef;
+            color: #333;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: 600;
+            margin-top: 20px;
+            transition: all 0.3s ease;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        
+        .btn:hover {
+            background: #07c;
+            color: #fff;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0, 238, 255, 0.3);
+        }
+        
+        @media (max-width: 768px) {
+            .service-details {
+                flex-direction: column;
+            }
+            
+            .service-header h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="service-header">
+            <h1><i class='bx bx-code-alt'></i> Web Development Services</h1>
+            <p>Custom, responsive, and high-performance websites tailored to your business needs</p>
+        </div>
+        
+        <div class="service-details">
+            <div class="service-content">
+                <h2>Comprehensive Web Solutions</h2>
+                <p>I specialize in creating modern, responsive websites that deliver exceptional user experiences across all devices. From simple brochure websites to complex web applications, my development process focuses on clean code, fast loading times, and intuitive interfaces.</p>
+                
+                <h3>What I Offer</h3>
+                <ul>
+                    <li>Fully responsive design that works on all devices</li>
+                    <li>Custom website development from scratch</li>
+                    <li>E-commerce solutions with secure payment gateways</li>
+                    <li>Content Management System (CMS) integration</li>
+                    <li>Website maintenance and updates</li>
+                    <li>SEO optimization for better search rankings</li>
+                    <li>Performance optimization for faster loading</li>
+                    <li>Website security and SSL implementation</li>
+                </ul>
+                
+                <h3>My Development Process</h3>
+                <ol>
+                    <li><strong>Consultation:</strong> Understanding your business goals and requirements</li>
+                    <li><strong>Planning:</strong> Creating sitemaps and wireframes</li>
+                    <li><strong>Design:</strong> Developing UI/UX mockups</li>
+                    <li><strong>Development:</strong> Building the website with clean, efficient code</li>
+                    <li><strong>Testing:</strong> Ensuring cross-browser compatibility and responsiveness</li>
+                    <li><strong>Launch:</strong> Deployment and final adjustments</li>
+                    <li><strong>Support:</strong> Ongoing maintenance and updates</li>
+                </ol>
+                
+                <div class="tech-stack">
+                    <h3>Technologies I Work With</h3>
+                    <div class="tech-grid">
+                        <div class="tech-item">HTML5</div>
+                        <div class="tech-item">CSS3</div>
+                        <div class="tech-item">JavaScript</div>
+                        <div class="tech-item">React</div>
+                        <div class="tech-item">Vue.js</div>
+                        <div class="tech-item">Node.js</div>
+                        <div class="tech-item">Express</div>
+                        <div class="tech-item">Python</div>
+                        <div class="tech-item">MySQL</div>
+                        <div class="tech-item">PHP</div>
+                        <div class="tech-item">WordPress</div>
+                        <div class="tech-item">MongoDB</div>
+                    </div>
+                </div>
+                            </div>
+            
+            <div class="service-image">
+                <img src="https://images.unsplash.com/photo-1547658719-da2b51169166?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" alt="Web Development Illustration">
+            </div>
+        </div>
+    </div>
+</body>
+</html>

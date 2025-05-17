@@ -1,0 +1,1057 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UI/UX Design Services | Professional Digital Design Solutions</title>
+    <style>
+        :root {
+            --primary-color: #3a86ff;
+            --secondary-color: #8338ec;
+            --dark-color: #212529;
+            --light-color: #f8f9fa;
+            --success-color: #06d6a0;
+            --transition-speed: 0.3s;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-color: #ffffff;
+            color: var(--dark-color);
+            line-height: 1.6;
+            scroll-behavior: smooth;
+        }
+        
+        .service-hero {
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: white;
+            padding: 5rem 2rem;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .service-hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiPjxkZWZzPjxwYXR0ZXJuIGlkPSJwYXR0ZXJuIiB3aWR0aD0iNDAiIGhlaWdodD0iNDAiIHBhdHRlcm5Vbml0cz0idXNlclNwYWNlT25Vc2UiIHBhdHRlcm5UcmFuc2Zvcm09InJvdGF0ZSg0NSkiPjxyZWN0IHdpZHRoPSIyMCIgaGVpZ2h0PSIyMCIgZmlsbD0icmdiYSgyNTUsMjU1LDI1NSwwLjAzKSIvPjwvcGF0dGVybj48L2RlZnM+PHJlY3Qgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0idXJsKCNwYXR0ZXJuKSIvPjwvc3ZnPg==');
+            opacity: 0.5;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            position: relative;
+        }
+        
+        h1, h2, h3, h4 {
+            font-weight: 700;
+            line-height: 1.2;
+        }
+        
+        h1 {
+            font-size: 2.8rem;
+            margin-bottom: 1.2rem;
+            position: relative;
+            display: inline-block;
+        }
+        
+        h1::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 4px;
+            background: rgba(255,255,255,0.5);
+            border-radius: 2px;
+        }
+        
+        .subtitle {
+            font-size: 1.25rem;
+            max-width: 700px;
+            margin: 0 auto 2.5rem;
+            opacity: 0.9;
+            font-weight: 300;
+        }
+        
+        .service-content {
+            padding: 5rem 0;
+        }
+        
+        .section-title {
+            text-align: center;
+            margin-bottom: 3.5rem;
+            font-size: 2.3rem;
+            color: var(--primary-color);
+            position: relative;
+        }
+        
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: -15px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 60px;
+            height: 3px;
+            background: var(--primary-color);
+            border-radius: 2px;
+        }
+        
+        .section-description {
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto 4rem;
+            font-size: 1.1rem;
+            color: #555;
+        }
+        
+        .process-steps {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin-bottom: 3rem;
+            gap: 30px;
+        }
+        
+        .step {
+            flex: 0 0 calc(33.333% - 30px);
+            margin-bottom: 2rem;
+            padding: 2.5rem 2rem;
+            background: var(--light-color);
+            border-radius: 10px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+            transition: all var(--transition-speed) ease;
+            position: relative;
+            overflow: hidden;
+            border: 1px solid rgba(0,0,0,0.03);
+        }
+        
+        .step:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+        }
+        
+        .step::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 4px;
+            height: 100%;
+            background: var(--primary-color);
+            transition: all var(--transition-speed) ease;
+        }
+        
+        .step:hover::before {
+            width: 6px;
+            background: var(--secondary-color);
+        }
+        
+        .step-number {
+            display: inline-block;
+            width: 45px;
+            height: 45px;
+            background: var(--primary-color);
+            color: white;
+            text-align: center;
+            line-height: 45px;
+            border-radius: 50%;
+            margin-bottom: 1.5rem;
+            font-weight: bold;
+            font-size: 1.2rem;
+            transition: all var(--transition-speed) ease;
+        }
+        
+        .step:hover .step-number {
+            background: var(--secondary-color);
+            transform: scale(1.1);
+        }
+        
+        .step-title {
+            font-size: 1.4rem;
+            margin-bottom: 1.2rem;
+            color: var(--dark-color);
+        }
+        
+        .step-description {
+            color: #555;
+            margin-bottom: 1.5rem;
+        }
+        
+        .step-button {
+            display: inline-block;
+            padding: 8px 20px;
+            background: var(--primary-color);
+            color: white;
+            text-decoration: none;
+            border-radius: 30px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            transition: all var(--transition-speed) ease;
+            border: 2px solid var(--primary-color);
+        }
+        
+        .step-button:hover {
+            background: transparent;
+            color: var(--primary-color);
+            transform: translateY(-2px);
+        }
+        
+        .benefits {
+            background: var(--light-color);
+            padding: 5rem 0;
+            position: relative;
+        }
+        
+        .benefits::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiPjxkZWZzPjxwYXR0ZXJuIGlkPSJwYXR0ZXJuIiB3aWR0aD0iNDAiIGhlaWdodD0iNDAiIHBhdHRlcm5Vbml0cz0idXNlclNwYWNlT25Vc2UiIHBhdHRlcm5UcmFuc2Zvcm09InJvdGF0ZSg0NSkiPjxyZWN0IHdpZHRoPSIyMCIgaGVpZ2h0PSIyMCIgZmlsbD0icmdiYSgwLDAsMCwwLjAyKSIvPjwvcGF0dGVybj48L2RlZnM+PHJlY3Qgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0idXJsKCNwYXR0ZXJuKSIvPjwvc3ZnPg==');
+        }
+        
+        .benefits-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            position: relative;
+        }
+        
+        .benefit-card {
+            background: white;
+            padding: 2.5rem 2rem;
+            border-radius: 10px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+            transition: all var(--transition-speed) ease;
+            border: 1px solid rgba(0,0,0,0.03);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .benefit-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+        }
+        
+        .benefit-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 4px;
+            background: var(--primary-color);
+            transition: all var(--transition-speed) ease;
+        }
+        
+        .benefit-card:hover::before {
+            height: 6px;
+            background: var(--secondary-color);
+        }
+        
+        .benefit-icon {
+            font-size: 2.8rem;
+            color: var(--primary-color);
+            margin-bottom: 1.5rem;
+            transition: all var(--transition-speed) ease;
+        }
+        
+        .benefit-card:hover .benefit-icon {
+            color: var(--secondary-color);
+            transform: scale(1.1);
+        }
+        
+        .benefit-title {
+            font-size: 1.4rem;
+            margin-bottom: 1.2rem;
+            color: var(--dark-color);
+        }
+        
+        .benefit-description {
+            color: #555;
+            margin-bottom: 1.5rem;
+        }
+        
+        .benefit-button {
+            display: inline-block;
+            padding: 8px 20px;
+            background: transparent;
+            color: var(--primary-color);
+            text-decoration: none;
+            border-radius: 30px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            transition: all var(--transition-speed) ease;
+            border: 2px solid var(--primary-color);
+        }
+        
+        .benefit-button:hover {
+            background: var(--primary-color);
+            color: white;
+            transform: translateY(-2px);
+        }
+        
+        .cta-section {
+            text-align: center;
+            padding: 6rem 0;
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: white;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .cta-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiPjxkZWZzPjxwYXR0ZXJuIGlkPSJwYXR0ZXJuIiB3aWR0aD0iNDAiIGhlaWdodD0iNDAiIHBhdHRlcm5Vbml0cz0idXNlclNwYWNlT25Vc2UiIHBhdHRlcm5UcmFuc2Zvcm09InJvdGF0ZSg0NSkiPjxyZWN0IHdpZHRoPSIyMCIgaGVpZ2h0PSIyMCIgZmlsbD0icmdiYSgyNTUsMjU1LDI1NSwwLjA1KSIvPjwvcGF0dGVybj48L2RlZnM+PHJlY3Qgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0idXJsKCNwYXR0ZXJuKSIvPjwvc3ZnPg==');
+        }
+        
+        .cta-title {
+            font-size: 2.5rem;
+            margin-bottom: 1.5rem;
+            position: relative;
+            display: inline-block;
+        }
+        
+        .cta-title::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 4px;
+            background: rgba(255,255,255,0.5);
+            border-radius: 2px;
+        }
+        
+        .cta-description {
+            max-width: 700px;
+            margin: 0 auto 3rem;
+            font-size: 1.2rem;
+            opacity: 0.9;
+            font-weight: 300;
+        }
+        
+        .btn {
+            display: inline-block;
+            padding: 15px 40px;
+            background: white;
+            color: var(--primary-color);
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: 700;
+            transition: all var(--transition-speed) ease;
+            border: 2px solid white;
+            font-size: 1.1rem;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .btn:hover {
+            background: transparent;
+            color: white;
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+        }
+        
+        .btn::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+            transition: 0.5s;
+        }
+        
+        .btn:hover::before {
+            left: 100%;
+        }
+        
+        .btn-outline {
+            background: transparent;
+            color: white;
+            border: 2px solid white;
+            margin-left: 15px;
+        }
+        
+        .btn-outline:hover {
+            background: white;
+            color: var(--primary-color);
+        }
+        
+        /* Modal Styles */
+        .modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.8);
+            z-index: 1000;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            overflow-y: auto;
+        }
+        
+        .modal.active {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            opacity: 1;
+        }
+        
+        .modal-content {
+            background: white;
+            width: 90%;
+            max-width: 800px;
+            border-radius: 10px;
+            padding: 3rem;
+            position: relative;
+            transform: translateY(50px);
+            transition: transform 0.3s ease;
+            box-shadow: 0 20px 50px rgba(0,0,0,0.3);
+        }
+        
+        .modal.active .modal-content {
+            transform: translateY(0);
+        }
+        
+        .modal-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 2rem;
+            padding-bottom: 1rem;
+            border-bottom: 1px solid #eee;
+        }
+        
+        .modal-title {
+            font-size: 1.8rem;
+            color: var(--primary-color);
+            margin: 0;
+        }
+        
+        .close-modal {
+            background: none;
+            border: none;
+            font-size: 2rem;
+            cursor: pointer;
+            color: #777;
+            transition: color 0.3s ease;
+        }
+        
+        .close-modal:hover {
+            color: var(--secondary-color);
+        }
+        
+        .modal-body {
+            margin-bottom: 2rem;
+        }
+        
+        .modal-footer {
+            text-align: right;
+        }
+        
+        /* Responsive Styles */
+        @media (max-width: 992px) {
+            .step {
+                flex: 0 0 calc(50% - 15px);
+            }
+        }
+        
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.3rem;
+            }
+            
+            .section-title {
+                font-size: 2rem;
+            }
+            
+            .step {
+                flex: 0 0 100%;
+            }
+            
+            .service-hero {
+                padding: 4rem 1rem;
+            }
+            
+            .cta-title {
+                font-size: 2rem;
+            }
+            
+            .btn {
+                padding: 12px 30px;
+            }
+            
+            .modal-content {
+                padding: 2rem;
+            }
+        }
+        
+        @media (max-width: 576px) {
+            h1 {
+                font-size: 2rem;
+            }
+            
+            .subtitle, .cta-description {
+                font-size: 1.1rem;
+            }
+            
+            .section-title {
+                font-size: 1.8rem;
+            }
+            
+            .btn-outline {
+                margin-left: 0;
+                margin-top: 15px;
+                display: block;
+            }
+            
+            .btn-group {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+        
+        /* Animation Classes */
+        .fade-in {
+            animation: fadeIn 0.5s ease forwards;
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        
+        .slide-up {
+            animation: slideUp 0.5s ease forwards;
+        }
+        
+        @keyframes slideUp {
+            from { transform: translateY(30px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+    </style>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <section class="service-hero">
+        <div class="container">
+            <i class='bx bx-paint service-icon' style="font-size: 5rem; margin-bottom: 2rem;"></i>
+            <h1 class="fade-in">UI/UX Design Services</h1>
+            <p class="subtitle fade-in">Crafting intuitive, visually stunning digital experiences that drive engagement and deliver measurable business results</p>
+            <div class="btn-group">
+                <a href="#process" class="btn slide-up" style="animation-delay: 0.2s;">Explore Our Process</a>
+                <a href="#contact" class="btn btn-outline slide-up" style="animation-delay: 0.3s;">Get Started</a>
+            </div>
+        </div>
+    </section>
+    
+    <section class="service-content" id="process">
+        <div class="container">
+            <h2 class="section-title slide-up">Our Design Process</h2>
+            <p class="section-description slide-up" style="animation-delay: 0.1s;">Every project follows our proven 6-phase approach to ensure we deliver designs that are not only beautiful but also highly functional, user-friendly, and aligned with your business objectives.</p>
+            
+            <div class="process-steps">
+                <div class="step slide-up">
+                    <div class="step-number">1</div>
+                    <h3 class="step-title">Discovery & Research</h3>
+                    <p class="step-description">I begin by understanding your business goals, target audience, and market landscape. This includes user research, competitor analysis, and defining key user personas.</p>
+                    <button class="step-button learn-more" data-modal="modal1">Learn More</button>
+                </div>
+                
+                <div class="step slide-up" style="animation-delay: 0.1s;">
+                    <div class="step-number">2</div>
+                    <h3 class="step-title">Wireframing & Prototyping</h3>
+                    <p class="step-description">I create low-fidelity wireframes to establish the information architecture, then develop interactive prototypes to test and refine the user flow before visual design begins.</p>
+                    <button class="step-button learn-more" data-modal="modal2">Learn More</button>
+                </div>
+                
+                <div class="step slide-up" style="animation-delay: 0.2s;">
+                    <div class="step-number">3</div>
+                    <h3 class="step-title">Visual Design</h3>
+                    <p class="step-description">Applying your brand identity, I craft pixel-perfect interfaces with attention to typography, color theory, and visual hierarchy to create an emotionally engaging experience.</p>
+                    <button class="step-button learn-more" data-modal="modal3">Learn More</button>
+                </div>
+                
+                <div class="step slide-up">
+                    <div class="step-number">4</div>
+                    <h3 class="step-title">User Testing</h3>
+                    <p class="step-description">I conduct usability testing with real users to validate design decisions, identify pain points, and ensure the interface is intuitive before development begins.</p>
+                    <button class="step-button learn-more" data-modal="modal4">Learn More</button>
+                </div>
+                
+                <div class="step slide-up" style="animation-delay: 0.1s;">
+                    <div class="step-number">5</div>
+                    <h3 class="step-title">Implementation Support</h3>
+                    <p class="step-description">I provide developers with comprehensive design systems, style guides, and assets to ensure faithful implementation of the designs.</p>
+                    <button class="step-button learn-more" data-modal="modal5">Learn More</button>
+                </div>
+                
+                <div class="step slide-up" style="animation-delay: 0.2s;">
+                    <div class="step-number">6</div>
+                    <h3 class="step-title">Iteration & Optimization</h3>
+                    <p class="step-description">After launch, I analyze user behavior and feedback to recommend data-driven improvements that enhance conversion and satisfaction.</p>
+                    <button class="step-button learn-more" data-modal="modal6">Learn More</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="benefits">
+        <div class="container">
+            <h2 class="section-title slide-up">Why Invest in Professional UI/UX Design?</h2>
+            <p class="section-description slide-up" style="animation-delay: 0.1s;">Superior design isn't just about aesthetics - it's a strategic investment that delivers tangible business results and competitive advantage.</p>
+            
+            <div class="benefits-grid">
+                <div class="benefit-card slide-up">
+                    <i class='bx bx-trending-up benefit-icon'></i>
+                    <h3 class="benefit-title">Increased Conversions</h3>
+                    <p class="benefit-description">Thoughtful UX design can improve conversion rates by up to 400% by removing friction points and guiding users effectively.</p>
+                    <button class="benefit-button learn-more" data-modal="modal7">See Case Study</button>
+                </div>
+                
+                <div class="benefit-card slide-up" style="animation-delay: 0.1s;">
+                    <i class='bx bx-time benefit-icon'></i>
+                    <h3 class="benefit-title">Reduced Development Costs</h3>
+                    <p class="benefit-description">Identifying and solving problems in the design phase is 10x cheaper than fixing them during or after development.</p>
+                    <button class="benefit-button learn-more" data-modal="modal8">Learn How</button>
+                </div>
+                
+                <div class="benefit-card slide-up" style="animation-delay: 0.2s;">
+                    <i class='bx bx-heart benefit-icon'></i>
+                    <h3 class="benefit-title">Enhanced User Satisfaction</h3>
+                    <p class="benefit-description">Intuitive interfaces create positive emotional connections with your brand, fostering loyalty and repeat usage.</p>
+                    <button class="benefit-button learn-more" data-modal="modal9">View Metrics</button>
+                </div>
+                
+                <div class="benefit-card slide-up">
+                    <i class='bx bx-mobile-alt benefit-icon'></i>
+                    <h3 class="benefit-title">Mobile-First Approach</h3>
+                    <p class="benefit-description">All designs are created with mobile users in mind first, then adapted for larger screens - essential in today's mobile-dominated world.</p>
+                    <button class="benefit-button learn-more" data-modal="modal10">Our Methodology</button>
+                </div>
+                
+                <div class="benefit-card slide-up" style="animation-delay: 0.1s;">
+                    <i class='bx bx-accessibility benefit-icon'></i>
+                    <h3 class="benefit-title">Accessibility Compliance</h3>
+                    <p class="benefit-description">I ensure designs meet WCAG standards, making your product usable by people with disabilities and protecting you from legal risk.</p>
+                    <button class="benefit-button learn-more" data-modal="modal11">Standards We Follow</button>
+                </div>
+                
+                <div class="benefit-card slide-up" style="animation-delay: 0.2s;">
+                    <i class='bx bx-shield-alt benefit-icon'></i>
+                    <h3 class="benefit-title">Competitive Advantage</h3>
+                    <p class="benefit-description">In markets where 88% of users won't return after a bad experience, superior UX becomes a key differentiator for your business.</p>
+                    <button class="benefit-button learn-more" data-modal="modal12">Industry Insights</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="cta-section" id="contact">
+        <div class="container">
+            <h2 class="cta-title slide-up">Ready to Transform Your Digital Experience?</h2>
+            <p class="cta-description slide-up" style="animation-delay: 0.1s;">Whether you're building a new product or redesigning an existing one, I can help create interfaces that delight users and drive measurable business results.</p>
+            <div class="btn-group">
+                <a href="#" class="btn slide-up" style="animation-delay: 0.2s;">Schedule a Free Consultation</a>
+                <a href="Portfolio.html" class="btn btn-outline slide-up" style="animation-delay: 0.3s;">View Our Portfolio</a>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Modal Windows -->
+    <div id="modal1" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 class="modal-title">Discovery & Research Phase</h3>
+                <button class="close-modal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <p>Our Discovery & Research phase is the foundation of every successful design project. We employ a comprehensive approach to ensure we fully understand your business context and user needs:</p>
+                <ul>
+                    <li><strong>Stakeholder Interviews:</strong> In-depth discussions with key decision-makers to align business objectives</li>
+                    <li><strong>User Personas:</strong> Development of detailed user profiles based on real data and research</li>
+                    <li><strong>Competitive Analysis:</strong> Evaluation of competitors' strengths and weaknesses in UX/UI</li>
+                    <li><strong>User Journey Mapping:</strong> Visualization of current user flows and pain points</li>
+                    <li><strong>Market Research:</strong> Analysis of industry trends and best practices</li>
+                </ul>
+                <p>This phase typically takes 2-3 weeks depending on project scope, and results in a comprehensive Research Report that guides all subsequent design decisions.</p>
+            </div>
+            <div class="modal-footer">
+                <button class="btn close-modal">Close</button>
+            </div>
+        </div>
+    </div>
+    
+    <div id="modal2" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 class="modal-title">Wireframing & Prototyping</h3>
+                <button class="close-modal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <p>Our Wireframing & Prototyping phase transforms research insights into tangible design concepts:</p>
+                <ul>
+                    <li><strong>Low-Fidelity Wireframes:</strong> Basic layouts focusing on information architecture and user flow</li>
+                    <li><strong>Interactive Prototypes:</strong> Clickable models that simulate user interactions</li>
+                    <li><strong>User Flow Diagrams:</strong> Visual representations of critical pathways through your product</li>
+                    <li><strong>Iterative Testing:</strong> Early validation with stakeholders and potential users</li>
+                    <li><strong>Responsive Framework:</strong> Designs that adapt to all device sizes from the start</li>
+                </ul>
+                <p>We use industry-standard tools like Figma, Sketch, and Adobe XD to create prototypes that are 80% of the UX with 20% of the effort, allowing for rapid iteration before visual design begins.</p>
+            </div>
+            <div class="modal-footer">
+                <button class="btn close-modal">Close</button>
+            </div>
+        </div>
+    </div>
+    
+    <div id="modal3" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 class="modal-title">Visual Design Process</h3>
+                <button class="close-modal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <p>Our Visual Design phase brings your product to life with stunning aesthetics that support usability:</p>
+                <ul>
+                    <li><strong>Design Systems:</strong> Comprehensive style guides for consistent branding</li>
+                    <li><strong>UI Components:</strong> Reusable elements that accelerate development</li>
+                    <li><strong>Microinteractions:</strong> Subtle animations that enhance user engagement</li>
+                    <li><strong>Accessibility Audits:</strong> Color contrast and readability testing</li>
+                    <li><strong>Pixel-Perfect Mockups:</strong> High-fidelity designs of all key screens</li>
+                </ul>
+                <p>We don't just make things pretty - we create visual hierarchies that guide users naturally to their goals while strengthening your brand identity. Our designs are always backed by UX principles that drive conversions.</p>
+            </div>
+            <div class="modal-footer">
+                <button class="btn close-modal">Close</button>
+            </div>
+        </div>
+    </div>
+    
+    <div id="modal4" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 class="modal-title">User Testing Methodology</h3>
+                <button class="close-modal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <p>Our User Testing phase validates designs with real users before development begins:</p>
+                <ul>
+                    <li><strong>Usability Testing:</strong> Moderated sessions observing real users</li>
+                    <li><strong>A/B Testing:</strong> Comparative evaluation of design alternatives</li>
+                    <li><strong>Heatmaps & Analytics:</strong> Quantitative data on user behavior</li>
+                    <li><strong>Accessibility Testing:</strong> Ensuring compliance with WCAG standards</li>
+                    <li><strong>Feedback Synthesis:</strong> Turning observations into actionable insights</li>
+                </ul>
+                <p>We typically conduct testing with 5-8 participants per user segment, as research shows this identifies 85% of usability issues. All findings are documented in a prioritized recommendations report.</p>
+            </div>
+            <div class="modal-footer">
+                <button class="btn close-modal">Close</button>
+            </div>
+        </div>
+    </div>
+    
+    <div id="modal5" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 class="modal-title">Implementation Support</h3>
+                <button class="close-modal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <p>Our Implementation Support ensures designs are accurately translated into code:</p>
+                <ul>
+                    <li><strong>Design Handoff Packages:</strong> Detailed specs for developers</li>
+                    <li><strong>Component Libraries:</strong> Reusable UI elements for consistent implementation</li>
+                    <li><strong>Developer Collaboration:</strong> Regular check-ins to answer questions</li>
+                    <li><strong>Quality Assurance:</strong> Design reviews during development</li>
+                    <li><strong>Responsive Testing:</strong> Ensuring perfect rendering across devices</li>
+                </ul>
+                <p>We provide developers with all assets in multiple formats (SVG, PNG, PDF) along with interactive prototypes that demonstrate intended animations and transitions. Our support continues until launch to ensure pixel-perfect implementation.</p>
+            </div>
+            <div class="modal-footer">
+                <button class="btn close-modal">Close</button>
+            </div>
+        </div>
+    </div>
+    
+    <div id="modal6" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 class="modal-title">Iteration & Optimization</h3>
+                <button class="close-modal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <p>Our Iteration & Optimization phase continues improving your product post-launch:</p>
+                <ul>
+                    <li><strong>Analytics Review:</strong> Identifying pain points in user flows</li>
+                    <li><strong>Performance Metrics:</strong> Tracking conversion improvements</li>
+                    <li><strong>User Feedback Analysis:</strong> Incorporating real user suggestions</li>
+                    <li><strong>A/B Testing:</strong> Validating design variations</li>
+                    <li><strong>Continuous Improvement:</strong> Regular design sprints for enhancements</li>
+                </ul>
+                <p>Digital products are never "done" - we recommend quarterly UX reviews to identify new optimization opportunities based on changing user behaviors and business goals. Many clients see conversion improvements of 10-30% from ongoing optimization.</p>
+            </div>
+            <div class="modal-footer">
+                <button class="btn close-modal">Close</button>
+            </div>
+        </div>
+    </div>
+    
+    <div id="modal7" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 class="modal-title">Conversion Optimization Case Study</h3>
+                <button class="close-modal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <p><strong>Client:</strong> E-commerce platform in the home goods sector</p>
+                <p><strong>Challenge:</strong> High cart abandonment rate (72%) on mobile devices</p>
+                <p><strong>Our Approach:</strong></p>
+                <ul>
+                    <li>Identified 12 friction points in checkout flow through user testing</li>
+                    <li>Redesigned form fields with better mobile input handling</li>
+                    <li>Implemented progress indicators for multi-step checkout</li>
+                    <li>Added trust signals and security badges at key decision points</li>
+                    <li>Simplified the payment options to reduce choice paralysis</li>
+                </ul>
+                <p><strong>Results:</strong></p>
+                <ul>
+                    <li>Mobile conversion rate increased by 187% in first month</li>
+                    <li>Average order value grew by 22% through better cross-selling UI</li>
+                    <li>Customer support inquiries about checkout process dropped by 63%</li>
+                    <li>Overall revenue increased by $1.2M in first quarter post-redesign</li>
+                </ul>
+            </div>
+            <div class="modal-footer">
+                <button class="btn close-modal">Close</button>
+            </div>
+        </div>
+    </div>
+    
+    <div id="modal8" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 class="modal-title">Cost Savings Through Design</h3>
+                <button class="close-modal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <p>Investing in thorough UX design upfront significantly reduces development costs:</p>
+                <ul>
+                    <li><strong>Early Problem Identification:</strong> Fixing issues in design phase costs 10x less than during development</li>
+                    <li><strong>Reduced Rework:</strong> Clear specifications decrease developer questions and revisions</li>
+                    <li><strong>Component Reusability:</strong> Design systems accelerate front-end development by 30-50%</li>
+                    <li><strong>Fewer Post-Launch Fixes:</strong> User-tested designs require fewer emergency patches</li>
+                    <li><strong>Scalability:</strong> Well-architected designs adapt more easily to future features</li>
+                </ul>
+                <p><strong>Example:</strong> For a recent SaaS application, our comprehensive design process helped the client:</p>
+                <ul>
+                    <li>Avoid 3 major architectural revisions during development</li>
+                    <li>Reduce development timeline by 6 weeks</li>
+                    <li>Cut projected maintenance costs by 40% in first year</li>
+                </ul>
+            </div>
+            <div class="modal-footer">
+                <button class="btn close-modal">Close</button>
+            </div>
+        </div>
+    </div>
+    
+    <div id="modal9" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 class="modal-title">User Satisfaction Metrics</h3>
+                <button class="close-modal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <p>We measure user satisfaction through multiple quantitative and qualitative metrics:</p>
+                <ul>
+                    <li><strong>System Usability Scale (SUS):</strong> Industry-standard 10-item questionnaire (scores typically improve 20-40 points)</li>
+                    <li><strong>Net Promoter Score (NPS):</strong> Measures likelihood users will recommend your product</li>
+                    <li><strong>Task Success Rate:</strong> Percentage of users completing key flows without assistance</li>
+                    <li><strong>Time-on-Task:</strong> Efficiency improvements in completing core actions</li>
+                    <li><strong>Error Rates:</strong> Reduction in user mistakes and misclicks</li>
+                    <li><strong>Emotional Response:</strong> User sentiment analysis through interviews and surveys</li>
+                </ul>
+                <p><strong>Case Example:</strong> Enterprise CRM redesign saw these improvements after UX overhaul:</p>
+                <ul>
+                    <li>SUS score increased from 52 (poor) to 82 (excellent)</li>
+                    <li>Average task completion time reduced by 65%</li>
+                    <li>Training time for new employees cut from 3 days to 4 hours</li>
+                    <li>Customer support tickets related to UI dropped by 78%</li>
+                </ul>
+            </div>
+            <div class="modal-footer">
+                <button class="btn close-modal">Close</button>
+            </div>
+        </div>
+    </div>
+    
+    <div id="modal10" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 class="modal-title">Mobile-First Methodology</h3>
+                <button class="close-modal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <p>Our mobile-first approach ensures optimal performance on all devices:</p>
+                <ul>
+                    <li><strong>Content Prioritization:</strong> Forced focus on what matters most to users</li>
+                    <li><strong>Touch-Friendly Design:</strong> Minimum 48px touch targets, proper spacing</li>
+                    <li><strong>Performance Optimization:</strong> Lightweight assets and efficient interactions</li>
+                    <li><strong>Progressive Enhancement:</strong> Core functionality works on all devices, with enhancements for larger screens</li>
+                    <li><strong>Adaptive Layouts:</strong> Breakpoints based on content needs rather than arbitrary device sizes</li>
+                </ul>
+                <p><strong>Key Statistics:</strong></p>
+                <ul>
+                    <li>58% of all website traffic now comes from mobile devices</li>
+                    <li>53% of users abandon sites taking over 3 seconds to load on mobile</li>
+                    <li>Mobile-first designs see 25% higher engagement on desktop as well</li>
+                </ul>
+                <p>We design using Chrome DevTools device emulation and test on real devices throughout the process to ensure perfect rendering.</p>
+            </div>
+            <div class="modal-footer">
+                <button class="btn close-modal">Close</button>
+            </div>
+        </div>
+    </div>
+    
+    <div id="modal11" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 class="modal-title">Accessibility Standards</h3>
+                <button class="close-modal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <p>We adhere to WCAG 2.1 AA standards for all designs:</p>
+                <ul>
+                    <li><strong>Color Contrast:</strong> Minimum 4.5:1 for normal text, 3:1 for large text</li>
+                    <li><strong>Keyboard Navigation:</strong> All functionality available without a mouse</li>
+                    <li><strong>Screen Reader Compatibility:</strong> Proper ARIA labels and semantic HTML</li>
+                    <li><strong>Motion Considerations:</strong> Options to reduce or disable animations</li>
+                    <li><strong>Text Alternatives:</strong> Descriptive alt text for all meaningful images</li>
+                    <li><strong>Form Accessibility:</strong> Clear labels, error messages, and instructions</li>
+                </ul>
+                <p><strong>Why Accessibility Matters:</strong></p>
+                <ul>
+                    <li>1 in 4 adults in the US has some form of disability</li>
+                    <li>Accessible sites have 50% better SEO performance</li>
+                    <li>In many countries, accessibility is legally required</li>
+                    <li>Accessible designs improve usability for all users</li>
+                </ul>
+                <p>We conduct automated and manual accessibility audits throughout the design process using tools like axe and WAVE.</p>
+            </div>
+            <div class="modal-footer">
+                <button class="btn close-modal">Close</button>
+            </div>
+        </div>
+    </div>
+    
+    <div id="modal12" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 class="modal-title">UX Competitive Advantage</h3>
+                <button class="close-modal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <p>Superior UX delivers measurable business impact:</p>
+                <ul>
+                    <li>88% of online consumers are less likely to return to a site after a bad experience</li>
+                    <li>Every $1 invested in UX brings $100 in return (ROI of 9,900%)</li>
+                    <li>Companies focusing on customer experience outperform competitors by nearly 80%</li>
+                    <li>70% of online businesses fail due to bad usability</li>
+                    <li>Good UX design can lower customer acquisition costs by up to 50%</li>
+                </ul>
+                <p><strong>Industry Benchmarks:</strong></p>
+                <ul>
+                    <li>Top-performing websites convert at 5-10x industry averages</li>
+                    <li>The best mobile experiences see 2-3x higher conversion than average</li>
+                    <li>Enterprise software with good UX requires 50% less training</li>
+                    <li>E-commerce sites with superior UX see 40% higher repeat purchases</li>
+                </ul>
+                <p>We help you move from being "usable" to being "delightful" - creating emotional connections that drive loyalty.</p>
+            </div>
+            <div class="modal-footer">
+                <button class="btn close-modal">Close</button>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        // Modal functionality
+        document.querySelectorAll('.learn-more').forEach(button => {
+            button.addEventListener('click', () => {
+                const modalId = button.getAttribute('data-modal');
+                const modal = document.getElementById(modalId);
+                modal.classList.add('active');
+                document.body.style.overflow = 'hidden';
+            });
+        });
+        
+        document.querySelectorAll('.close-modal').forEach(button => {
+            button.addEventListener('click', () => {
+                const modal = button.closest('.modal');
+                modal.classList.remove('active');
+                document.body.style.overflow = 'auto';
+            });
+        });
+        
+        // Close modal when clicking outside content
+        document.querySelectorAll('.modal').forEach(modal => {
+            modal.addEventListener('click', (e) => {
+                if (e.target === modal) {
+                    modal.classList.remove('active');
+                    document.body.style.overflow = 'auto';
+                }
+            });
+        });
+        
+        // Animation on scroll
+        const animateOnScroll = () => {
+            const elements = document.querySelectorAll('.slide-up, .fade-in');
+            
+            elements.forEach(element => {
+                const elementPosition = element.getBoundingClientRect().top;
+                const screenPosition = window.innerHeight / 1.2;
+                
+                if (elementPosition < screenPosition) {
+                    element.style.opacity = '1';
+                    element.style.transform = 'translateY(0)';
+                }
+            });
+        };
+        
+        window.addEventListener('scroll', animateOnScroll);
+        window.addEventListener('load', animateOnScroll);
+    </script>
+</body>
+</html>
