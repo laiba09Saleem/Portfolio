@@ -4,7 +4,7 @@ Welcome to my personal portfolio website! This project showcases my skills, proj
 
 🌐 Live Demo
 
-[Click here to view the live site](http://127.0.0.1:5500/Portfolio.html#home)
+[Click here to view the live site](https://laiba09saleem.github.io/Portfolio/)
 
 📁 Project Structure
 
