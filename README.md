@@ -111,5 +111,3 @@ Contributions are welcome! If you want to add features, improve UI, or fix bugs:
 ## License
 
 This project is licensed under the MIT License – see the [LICENSE](LICENSE) file for details.
-
-\
