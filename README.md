@@ -1,73 +1,113 @@
-# React + TypeScript + Vite
+# Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A professional portfolio website built with modern web technologies to showcase projects, skills, and experience.
 
-Currently, two official plugins are available:
+**Live Demo:** [Add your live demo URL here]
+**Repository:** [https://github.com/laiba09Saleem/Portfolio](https://github.com/laiba09Saleem/Portfolio.git)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+## Table of Contents
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+* [About the Project](#about-the-project)
+* [Features](#features)
+* [Technologies Used](#technologies-used)
+* [Getting Started](#getting-started)
+* [Deployment](#deployment)
+* [Contributing](#contributing)
+* [License](#license)
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## About the Project
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+This portfolio project serves as a personal showcase website highlighting projects, skills, and professional experience. It is designed with a responsive layout, smooth user interactions, and modern UI components.
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+---
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+## Features
+
+* Responsive design for all devices
+* Modern UI using Tailwind CSS and shadcn-ui components
+* Built with React and TypeScript for a scalable architecture
+* Easy to extend with new sections and projects
+* Fast development setup using Vite
+
+---
+
+## Technologies Used
+
+* **React** – Frontend library for building interactive UI
+* **TypeScript** – Type safety for scalable code
+* **Vite** – Fast build and development tooling
+* **Tailwind CSS** – Utility-first CSS framework for styling
+* **shadcn-ui** – Prebuilt React UI components
+* **EmailJS** – Email sending service for contact forms without backend
+
+---
+
+## Getting Started
+
+Follow these steps to run the project locally:
+
+1. **Clone the repository:**
+
+```bash
+git clone https://github.com/laiba09Saleem/Portfolio.git
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+2. **Navigate to the project directory:**
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```bash
+cd Portfolio
 ```
+
+3. **Install dependencies:**
+
+```bash
+npm install
+```
+
+4. **Start the development server:**
+
+```bash
+npm run dev
+```
+
+5. Open your browser and visit `http://localhost:5173` (or the URL shown in your terminal).
+
+---
+
+## Deployment
+
+To deploy this project:
+
+1. Build the production-ready files:
+
+```bash
+npm run build
+```
+
+2. Serve using any static hosting platform (Vercel, Netlify, GitHub Pages, etc.):
+
+```bash
+npm run preview
+```
+
+---
+
+## Contributing
+
+Contributions are welcome! If you want to add features, improve UI, or fix bugs:
+
+1. Fork the repository
+2. Create a new branch (`git checkout -b feature/your-feature`)
+3. Make your changes and commit (`git commit -m 'Add your message'`)
+4. Push to the branch (`git push origin feature/your-feature`)
+5. Open a Pull Request
+
+---
+
+## License
+
+This project is licensed under the MIT License – see the [LICENSE](LICENSE) file for details.
