@@ -2,7 +2,7 @@
 
 A professional portfolio website built with modern web technologies to showcase projects, skills, and experience.
 
-**Live Demo:** [Add your live demo URL here]
+**Live Demo:** [portfolio-laiba-22.vercel.app]
 **Repository:** [https://github.com/laiba09Saleem/Portfolio](https://github.com/laiba09Saleem/Portfolio.git)
 
 ---
