@@ -5,38 +5,37 @@ const projects = [
     title: "VEMS360",
     role: "Full-Stack Developer",
     description:
-      "Event management system with registration, booking, ticketing, and streaming modules. Team lead responsible for development, UI design, and documentation.",
+      "Event management system with registration, booking, ticketing, and streaming modules. Led development, UI design, and documentation.",
     tech: ["Python", "Django", "MySQL", "HTML", "CSS", "JavaScript", "Bootstrap"],
     highlights: [
       "Built core modules including event registration, booking, and ticketing",
-      "Solved major technical challenges in authentication (Google login) and payment integration",
+      "Solved technical challenges in authentication (Google login) and payment integration",
       "Coordinated task assignments, weekly meetings, and project documentation",
     ],
   },
   {
-  title: "Personal Portfolio",
-  role: "Frontend Developer",
-  description:
-    "A professional and responsive personal portfolio website built to showcase projects, skills, and experience with a modern UI and smooth user interactions.",
-  tech: ["React","TypeScript","Vite","Tailwind CSS","shadcn-ui","EmailJS"
-  ],
-  highlights: [
-    "Responsive design optimized for all screen sizes",
-    "Modern UI with reusable shadcn-ui components",
-    "Smooth user interactions and clean layout",
-  ],
-},
-
+    title: "Personal Portfolio",
+    role: "Frontend Developer",
+    description:
+      "Professional and responsive personal portfolio website to showcase projects, skills, and experience with a modern UI and smooth interactions.",
+    tech: ["React", "TypeScript", "Vite", "Tailwind CSS", "shadcn-ui", "EmailJS"],
+    highlights: [
+      "Responsive design optimized for all screen sizes",
+      "Modern UI with reusable shadcn-ui components",
+      "Smooth interactions and clean layout",
+    ],
+  },
   {
-    title: "Quiz App",
+    title: "Task Automation",
     role: "Full-Stack Developer",
     description:
-      "Django-based quiz application with user authentication, quiz creation, scoring, and leaderboard features.",
-    tech: ["Python", "Django", "SQLite", "HTML", "CSS", "JavaScript"],
+      "Django-based task automation system with user authentication, task creation, tracking, and status management.",
+    tech: ["Python", "Django", "PostgreSQL", "HTML", "CSS", "JavaScript"],
     highlights: [
-      "Implemented user login, quiz creation, and score calculation",
-      "Built leaderboard and result history features",
+      "Implemented user login, task creation, and automated task tracking",
+      "Built task status updates, history, and notifications",
       "Designed clean database model relations using Django ORM",
+      "Integrated frontend with Django backend for seamless experience",
     ],
   },
 ];
@@ -50,7 +49,9 @@ const Projects = () => {
           <h2 className="section-title text-center mb-2">
             Featured <span className="text-gradient">Projects</span>
           </h2>
-          <p className="text-muted-foreground text-center mb-12">Some things I've built</p>
+          <p className="text-muted-foreground text-center mb-12">
+            Some things I've built
+          </p>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {projects.map((project, index) => (
@@ -71,7 +72,9 @@ const Projects = () => {
                   </div>
                 </div>
 
-                <p className="text-muted-foreground text-sm mb-4 flex-grow">{project.description}</p>
+                <p className="text-muted-foreground text-sm mb-4 flex-grow">
+                  {project.description}
+                </p>
 
                 <div className="space-y-4">
                   <div className="flex flex-wrap gap-1.5">
