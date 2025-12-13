@@ -14,17 +14,30 @@ const projects = [
     ],
   },
   {
-    title: "Personal Portfolio",
-    role: "Frontend Developer",
-    description:
-      "Responsive personal portfolio with smooth animations, project showcases, and engaging user experience.",
-    tech: ["HTML5", "CSS3", "JavaScript", "Boxicons", "ScrollReveal.js", "Typed.js"],
-    highlights: [
-      "Implemented smooth scrolling and scroll reveal animations",
-      "Animated typing effects for engaging user experience",
-      "Includes downloadable CV, skill progress bars, and social profiles",
-    ],
-  },
+  title: "Personal Portfolio",
+  role: "Frontend Developer",
+  description:
+    "A professional and responsive personal portfolio website built to showcase projects, skills, and experience with a modern UI and smooth user interactions.",
+  tech: [
+    "React",
+    "TypeScript",
+    "Vite",
+    "Tailwind CSS",
+    "shadcn-ui",
+    "EmailJS"
+  ],
+  highlights: [
+    "Responsive design optimized for all screen sizes",
+    "Modern UI with reusable shadcn-ui components",
+    "Fast and scalable architecture using React, TypeScript, and Vite",
+    "Smooth user interactions and clean layout",
+    "Contact form integration using EmailJS without backend",
+    "Deployed on Vercel for fast and reliable access"
+  ],
+  liveDemo: "https://portfolio-laiba-22.vercel.app",
+  repository: "https://github.com/laiba09Saleem/Portfolio"
+},
+
   {
     title: "Quiz App",
     role: "Full-Stack Developer",
