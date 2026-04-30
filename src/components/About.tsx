@@ -15,9 +15,7 @@ const About = () => {
             <div className="project-card">
               <h3 className="text-xl font-heading font-semibold mb-4 text-primary">Profile</h3>
               <p className="text-muted-foreground leading-relaxed">
-                Python developer focused on Django and REST APIs. Experienced in delivering core
-                product features, working in Agile teams, and improving application functionality.
-                Passionate about backend development and building scalable web applications.
+                Junior Software Engineer and AI/ML Engineer with hands-on experience in Python, Django, and REST API development, along with practical exposure to AI/ML workflows and model integration. Skilled in building scalable backend systems, designing databases, and integrating modern frontend frameworks. Currently gaining industry-level training in AI/ML with a focus on deep learning, model deployment, and MLOps.
               </p>
             </div>
 
@@ -29,11 +27,11 @@ const About = () => {
               </h3>
               <div className="space-y-2">
                 <h4 className="font-semibold text-foreground">BS in Computer Science</h4>
-                <p className="text-muted-foreground">Punjab University</p>
+                <p className="text-muted-foreground">Panjab University</p>
                 <div className="flex flex-wrap gap-4 text-sm text-muted-foreground">
                   <span className="flex items-center gap-1">
                     <Calendar size={14} />
-                    12/2021 – 07/2025
+                    12/2021 – 09/2025
                   </span>
                   <span className="flex items-center gap-1">
                     <MapPin size={14} />
@@ -41,9 +39,7 @@ const About = () => {
                   </span>
                 </div>
                 <p className="text-sm text-muted-foreground mt-3">
-                  Strong foundation in computer science principles and applications. Covered major
-                  areas including programming, databases, software engineering, networking, and
-                  modern web technologies.
+                  Strong foundation in Software Engineering, Web Development, Databases, and Programming Fundamentals. Currently focused on deep learning, model deployment, and MLOps.
                 </p>
               </div>
             </div>

@@ -1,19 +1,23 @@
 const skillCategories = [
   {
-    title: "Languages & Backend",
-    skills: ["Python", "Django", "Django REST Framework", "SQLite", "MySQL"],
+    title: "Programming & Backend",
+    skills: ["Python", "Django", "Django REST Framework", "FastAPI", "REST APIs", "MVC Architecture"],
   },
   {
-    title: "Frontend",
-    skills: ["HTML", "CSS", "JavaScript", "Bootstrap", "Tailwind CSS"],
+    title: "AI / ML",
+    skills: ["Machine Learning", "Deep Learning (CNN, RNN, LSTM)", "NLP", "Model Evaluation", "Data Preprocessing", "MLOps Basics"],
   },
   {
-    title: "Version Control & Tools",
-    skills: ["Git", "GitHub", "Jira", "Slack", "Agile Workflow"],
+    title: "Frontend & UI",
+    skills: ["Next.js", "Angular", "Tailwind CSS", "HTML", "CSS", "JavaScript", "Bootstrap"],
   },
   {
-    title: "Additional Exposure",
-    skills: ["Angular (Basic)", "Flutter (Basic)"],
+    title: "Databases & Tools",
+    skills: ["PostgreSQL", "SQLite", "Django ORM", "Git", "GitHub", "Postman", "Agile/Scrum"],
+  },
+  {
+    title: "Cloud & Analysis",
+    skills: ["Azure AI Services", "NumPy", "Pandas", "Matplotlib", "Seaborn", "EDA"],
   },
 ];
 

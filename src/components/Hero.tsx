@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { Github, Linkedin, Mail, MapPin, Phone, Download } from "lucide-react";
 
-const roles = ["Software Engineer", "Python Developer", "Backend Developer", "Django Expert"];
+const roles = ["AI/ML Engineer", "Software Engineer", "Python Developer", "Django Expert"];
 
 const Hero = () => {
   const [currentRole, setCurrentRole] = useState(0);
@@ -56,8 +56,7 @@ const Hero = () => {
           </div>
 
           <p className="text-muted-foreground text-lg md:text-xl max-w-2xl mx-auto mt-8 mb-10 animate-fade-up delay-200">
-            Python developer focused on Django and REST APIs. Passionate about backend development
-            and building scalable web applications.
+            AI/ML Engineer and Software Developer focused on building intelligent systems and scalable backend architectures. Experienced in Python, Django, and deep learning workflows.
           </p>
 
           <div className="flex flex-wrap justify-center gap-4 mb-10 animate-fade-up delay-300">

@@ -16,23 +16,19 @@ const Contact = () => {
 
   const sendEmail = (e: React.FormEvent) => {
     e.preventDefault();
-console.log("Template ID:", import.meta.env.VITE_EMAILJS_TEMPLATE_ID);
-  console.log("Service ID:", import.meta.env.VITE_EMAILJS_SERVICE_ID);
-  console.log("Public Key:", import.meta.env.VITE_EMAILJS_PUBLIC_KEY);
     setLoading(true);
 
     emailjs.send(
-
-  import.meta.env.VITE_EMAILJS_SERVICE_ID,
-  import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
-  {
-    name: form.name,          // matches {{name}}
-    message: form.message, 
-    reply_to: form.email,
-    time: new Date().toLocaleString(), // matches {{time}}
-  },
-  import.meta.env.VITE_EMAILJS_PUBLIC_KEY
-)
+      import.meta.env.VITE_EMAILJS_SERVICE_ID,
+      import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
+      {
+        name: form.name,
+        message: form.message,
+        reply_to: form.email,
+        time: new Date().toLocaleString(),
+      },
+      import.meta.env.VITE_EMAILJS_PUBLIC_KEY
+    )
 
       .then(
         () => {

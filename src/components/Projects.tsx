@@ -1,41 +1,82 @@
-import { ExternalLink, Github, Layers } from "lucide-react";
+import { Layers, Brain, Sprout, Stethoscope, ShieldAlert, Briefcase, Book } from "lucide-react";
 
 const projects = [
   {
+    title: "JobReadiness Portal",
+    role: "AI/ML & Full-Stack Developer",
+    description:
+      "AI-based system to analyze student job readiness using ML models based on parameters like CGPA, skills, and internships.",
+    tech: ["Python", "Flask", "Next.js", "Scikit-learn", "Pandas"],
+    icon: Brain,
+    highlights: [
+      "Built ML pipelines from preprocessing to model deployment",
+      "Exposed prediction API via Flask and connected Next.js frontend",
+      "Handled data imbalance and imputed missing values for stability",
+    ],
+  },
+  {
+    title: "AgriVision AI",
+    role: "AI/ML Developer",
+    description:
+      "AI-powered agriculture platform for plant disease detection and smart farming guidance using Google Gemini AI.",
+    tech: ["React", "TypeScript", "Tailwind CSS", "Gemini AI", "Lucide"],
+    icon: Sprout,
+    highlights: [
+      "Integrated Google Gemini models for intelligent plant diagnosis",
+      "Designed responsive UI for farmers and plant lovers",
+      "Implemented real-time image analysis and feedback loop",
+    ],
+  },
+  {
+    title: "Virtual Mini Hospital",
+    role: "Full-Stack Developer",
+    description:
+      "Modern AI-powered healthcare platform with AI symptoms checker, virtual queue system, and medical chatbot.",
+    tech: ["React", "TypeScript", "Supabase", "Gemini AI", "Tailwind CSS"],
+    icon: Stethoscope,
+    highlights: [
+      "Built AI Symptom Checker and Medical Chatbot using Gemini",
+      "Implemented Virtual Queue System with real-time status updates",
+      "Developed backend using Supabase Edge Functions",
+    ],
+  },
+  {
+    title: "Fraud Detection System",
+    role: "AI/ML Developer",
+    description:
+      "Real-time transaction monitoring system using Poisson-based anomaly detection to identify fraudulent spikes.",
+    tech: ["Python", "Flask", "NumPy", "SciPy", "Chart.js"],
+    icon: ShieldAlert,
+    highlights: [
+      "Implemented Poisson distribution logic for anomaly detection",
+      "Created interactive dashboard with real-time data visualization",
+      "Developed risk scoring algorithm based on transaction behavior",
+    ],
+  },
+  {
     title: "VEMS360",
-    role: "Full-Stack Developer",
+    role: "Full-Stack Developer (FYP)",
     description:
-      "Event management system with registration, booking, ticketing, and streaming modules. Led development, UI design, and documentation.",
-    tech: ["Python", "Django", "MySQL", "HTML", "CSS", "JavaScript", "Bootstrap"],
+      "Virtual Event Management System with registration, booking, ticketing, and secure payment integration.",
+    tech: ["FastAPI", "Python", "MySQL", "Bootstrap", "OAuth"],
+    icon: Briefcase,
     highlights: [
-      "Built core modules including event registration, booking, and ticketing",
-      "Solved technical challenges in authentication (Google login) and payment integration",
-      "Coordinated task assignments, weekly meetings, and project documentation",
+      "Designed scalable database schema and RESTful APIs",
+      "Integrated Google Auth and secure payment gateways",
+      "Managed role-based access control for users and admins",
     ],
   },
   {
-    title: "Personal Portfolio",
-    role: "Frontend Developer",
+    title: "Personal Library",
+    role: "Python Developer",
     description:
-      "Professional and responsive personal portfolio website to showcase projects, skills, and experience with a modern UI and smooth interactions.",
-    tech: ["React", "TypeScript", "Vite", "Tailwind CSS", "shadcn-ui", "EmailJS"],
+      "Streamlit-based library manager for tracking book collections with search, add, and delete functionalities.",
+    tech: ["Python", "Streamlit", "JSON Storage"],
+    icon: Book,
     highlights: [
-      "Responsive design optimized for all screen sizes",
-      "Modern UI with reusable shadcn-ui components",
-      "Smooth interactions and clean layout",
-    ],
-  },
-  {
-    title: "Task Automation",
-    role: "Full-Stack Developer",
-    description:
-      "Django-based task automation system with user authentication, task creation, tracking, and status management.",
-    tech: ["Python", "Django", "PostgreSQL", "HTML", "CSS", "JavaScript"],
-    highlights: [
-      "Implemented user login, task creation, and automated task tracking",
-      "Built task status updates, history, and notifications",
-      "Designed clean database model relations using Django ORM",
-      "Integrated frontend with Django backend for seamless experience",
+      "Built interactive UI for managing local book database",
+      "Implemented file-based JSON storage for data persistence",
+      "Integrated search and filter logic for efficient browsing",
     ],
   },
 ];
@@ -62,7 +103,7 @@ const Projects = () => {
               >
                 <div className="flex items-center gap-3 mb-4">
                   <div className="p-2 rounded-lg bg-primary/10 group-hover:bg-primary/20 transition-colors">
-                    <Layers className="text-primary" size={24} />
+                    <project.icon className="text-primary" size={24} />
                   </div>
                   <div>
                     <h3 className="text-lg font-heading font-semibold text-foreground">
