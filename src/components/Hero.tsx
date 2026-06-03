@@ -98,13 +98,13 @@ const Hero = () => {
               <Linkedin size={24} />
             </a>
             <a
-              href="/CV/Laiba-Saleem.pdf"
+              href="/CV/Laiba_Saleem.pdf"
               target="_blank"
               rel="noopener noreferrer"
               className="px-6 py-3 rounded-full bg-gradient-primary text-primary-foreground font-semibold hover:opacity-90 transition-opacity flex items-center gap-2"
             >
-            <Download size={18} />
-               View Cv
+              <Download size={18} />
+              View Cv
             </a>
 
           </div>
