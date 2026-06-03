@@ -1,82 +1,80 @@
-import { Layers, Brain, Sprout, Stethoscope, ShieldAlert, Briefcase, Book } from "lucide-react";
+import { ExternalLink, Github, Brain, Sprout, Stethoscope, Search, ShieldAlert, Briefcase } from "lucide-react";
 
 const projects = [
   {
-    title: "JobReadiness Portal",
-    role: "AI/ML & Full-Stack Developer",
-    description:
-      "AI-based system to analyze student job readiness using ML models based on parameters like CGPA, skills, and internships.",
-    tech: ["Python", "Flask", "Next.js", "Scikit-learn", "Pandas"],
-    icon: Brain,
-    highlights: [
-      "Built ML pipelines from preprocessing to model deployment",
-      "Exposed prediction API via Flask and connected Next.js frontend",
-      "Handled data imbalance and imputed missing values for stability",
-    ],
-  },
-  {
-    title: "AgriVision AI",
+    title: "OptiCare",
     role: "AI/ML Developer",
-    description:
-      "AI-powered agriculture platform for plant disease detection and smart farming guidance using Google Gemini AI.",
-    tech: ["React", "TypeScript", "Tailwind CSS", "Gemini AI", "Lucide"],
-    icon: Sprout,
+    description: "AI-driven healthcare solution for automated wound assessment using MobileNetV2 and NLP-assisted validation.",
+    tech: ["FastAPI", "PyTorch", "MobileNetV2", "NLP", "React"],
+    icon: Stethoscope,
+    github: "https://github.com/laiba09Saleem",
+    live: "https://opti-care-frontend.vercel.app/",
     highlights: [
-      "Integrated Google Gemini models for intelligent plant diagnosis",
-      "Designed responsive UI for farmers and plant lovers",
-      "Implemented real-time image analysis and feedback loop",
+      "Automated wound assessment system",
+      "NLP-assisted validation for clinical reports",
     ],
   },
   {
-    title: "Virtual Mini Hospital",
-    role: "Full-Stack Developer",
-    description:
-      "Modern AI-powered healthcare platform with AI symptoms checker, virtual queue system, and medical chatbot.",
-    tech: ["React", "TypeScript", "Supabase", "Gemini AI", "Tailwind CSS"],
-    icon: Stethoscope,
+    title: "AI-Based Job Readiness Portal",
+    role: "AI/ML & Full-Stack Developer",
+    description: "AI system to analyze student job readiness using ML models based on parameters like CGPA, skills, and internships.",
+    tech: ["Python", "Flask", "Scikit-learn", "Pandas", "Next.js"],
+    icon: Brain,
+    github: "https://github.com/laiba09Saleem/Elite_ML.git",
+    live: "https://github.com/laiba09Saleem/Elite_ML.git",
     highlights: [
-      "Built AI Symptom Checker and Medical Chatbot using Gemini",
-      "Implemented Virtual Queue System with real-time status updates",
-      "Developed backend using Supabase Edge Functions",
+      "End-to-end ML pipeline deployment",
+      "Predictive analytics for career readiness",
+    ],
+  },
+  {
+    title: "AgriVision-AI",
+    role: "AI/ML Developer",
+    description: "AI-powered agriculture platform for plant disease detection and smart farming guidance.",
+    tech: ["Python", "TensorFlow", "React", "Gemini AI"],
+    icon: Sprout,
+    github: "https://github.com/laiba09Saleem/AgriVision-AI.git",
+    live: "https://github.com/laiba09Saleem/AgriVision-AI.git",
+    highlights: [
+      "Real-time plant disease detection",
+      "Smart farming recommendations",
+    ],
+  },
+  {
+    title: "CareerLens-AI",
+    role: "AI/ML Developer",
+    description: "Advanced AI tool for career path visualization and talent matching using NLP techniques.",
+    tech: ["Python", "NLP", "FastAPI", "React"],
+    icon: Search,
+    github: "https://github.com/laiba09Saleem/Career_lens.git",
+    live: "https://github.com/laiba09Saleem/Career_lens.git",
+    highlights: [
+      "NLP-based talent assessment",
+      "Dynamic career path mapping",
     ],
   },
   {
     title: "Fraud Detection System",
     role: "AI/ML Developer",
-    description:
-      "Real-time transaction monitoring system using Poisson-based anomaly detection to identify fraudulent spikes.",
-    tech: ["Python", "Flask", "NumPy", "SciPy", "Chart.js"],
+    description: "Real-time transaction monitoring system using Poisson-based anomaly detection.",
+    tech: ["Python", "Flask", "NumPy", "SciPy"],
     icon: ShieldAlert,
+    github: "https://github.com/laiba09Saleem",
     highlights: [
-      "Implemented Poisson distribution logic for anomaly detection",
-      "Created interactive dashboard with real-time data visualization",
-      "Developed risk scoring algorithm based on transaction behavior",
+      "Poisson distribution anomaly detection",
+      "Real-time transaction monitoring",
     ],
   },
   {
     title: "VEMS360",
-    role: "Full-Stack Developer (FYP)",
-    description:
-      "Virtual Event Management System with registration, booking, ticketing, and secure payment integration.",
-    tech: ["FastAPI", "Python", "MySQL", "Bootstrap", "OAuth"],
+    role: "Full-Stack Developer",
+    description: "Virtual Event Management System with registration, booking, and secure payment integration.",
+    tech: ["FastAPI", "Python", "MySQL", "Bootstrap"],
     icon: Briefcase,
+    github: "https://github.com/laiba09Saleem",
     highlights: [
-      "Designed scalable database schema and RESTful APIs",
-      "Integrated Google Auth and secure payment gateways",
-      "Managed role-based access control for users and admins",
-    ],
-  },
-  {
-    title: "Personal Library",
-    role: "Python Developer",
-    description:
-      "Streamlit-based library manager for tracking book collections with search, add, and delete functionalities.",
-    tech: ["Python", "Streamlit", "JSON Storage"],
-    icon: Book,
-    highlights: [
-      "Built interactive UI for managing local book database",
-      "Implemented file-based JSON storage for data persistence",
-      "Integrated search and filter logic for efficient browsing",
+      "Scalable RESTful API architecture",
+      "Secure payment gateway integration",
     ],
   },
 ];
@@ -129,8 +127,8 @@ const Projects = () => {
                     ))}
                   </div>
 
-                  <ul className="space-y-2">
-                    {project.highlights.slice(0, 2).map((highlight, idx) => (
+                  <ul className="space-y-2 mb-4">
+                    {project.highlights.map((highlight, idx) => (
                       <li
                         key={idx}
                         className="flex items-start gap-2 text-xs text-muted-foreground"
@@ -140,6 +138,31 @@ const Projects = () => {
                       </li>
                     ))}
                   </ul>
+
+                  <div className="flex items-center gap-3 pt-2">
+                    {project.github && (
+                      <a
+                        href={project.github}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex items-center gap-1.5 text-xs font-medium text-muted-foreground hover:text-primary transition-colors"
+                      >
+                        <Github size={14} />
+                        GitHub
+                      </a>
+                    )}
+                    {project.live && (
+                      <a
+                        href={project.live}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex items-center gap-1.5 text-xs font-medium text-muted-foreground hover:text-primary transition-colors"
+                      >
+                        <ExternalLink size={14} />
+                        Live Demo
+                      </a>
+                    )}
+                  </div>
                 </div>
               </div>
             ))}

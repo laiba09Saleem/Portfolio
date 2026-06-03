@@ -15,7 +15,7 @@ const About = () => {
             <div className="project-card">
               <h3 className="text-xl font-heading font-semibold mb-4 text-primary">Profile</h3>
               <p className="text-muted-foreground leading-relaxed">
-                Junior Software Engineer and AI/ML Engineer with hands-on experience in Python, Django, and REST API development, along with practical exposure to AI/ML workflows and model integration. Skilled in building scalable backend systems, designing databases, and integrating modern frontend frameworks. Currently gaining industry-level training in AI/ML with a focus on deep learning, model deployment, and MLOps.
+                AI/ML-focused software engineer with hands-on experience in building end-to-end machine learning pipelines and scalable backend systems. Skilled in Python, PyTorch, FastAPI, and TensorFlow, with specialized expertise in computer vision (MobileNetV2) and NLP validation, as demonstrated in the development of OptiCare—an AI-driven healthcare solution for automated wound assessment. Experienced in data preprocessing, model evaluation, and deploying AI workflows using Docker and MLOps fundamentals.
               </p>
             </div>
 

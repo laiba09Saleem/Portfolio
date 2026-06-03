@@ -1,23 +1,23 @@
 const skillCategories = [
   {
-    title: "Programming & Backend",
-    skills: ["Python", "Django", "Django REST Framework", "FastAPI", "REST APIs", "MVC Architecture"],
+    title: "AI / ML",
+    skills: ["PyTorch", "TensorFlow", "Scikit-learn", "MobileNetV2", "Computer Vision", "NLP", "Deep Learning", "MLOps Fundamentals", "Model Evaluation"],
   },
   {
-    title: "AI / ML",
-    skills: ["Machine Learning", "Deep Learning (CNN, RNN, LSTM)", "NLP", "Model Evaluation", "Data Preprocessing", "MLOps Basics"],
+    title: "Backend & Systems",
+    skills: ["FastAPI", "Django Rest Framework", "Flask", "RESTful API Integration", "Pydantic", "SQLAlchemy"],
   },
   {
     title: "Frontend & UI",
-    skills: ["Next.js", "Angular", "Tailwind CSS", "HTML", "CSS", "JavaScript", "Bootstrap"],
+    skills: ["React.js", "TypeScript", "Tailwind CSS", "HTML", "CSS", "JavaScript"],
   },
   {
-    title: "Databases & Tools",
-    skills: ["PostgreSQL", "SQLite", "Django ORM", "Git", "GitHub", "Postman", "Agile/Scrum"],
+    title: "Databases & Cloud",
+    skills: ["PostgreSQL", "SQLite", "Supabase (Storage & DB)", "Google Cloud Platform (GCP)"],
   },
   {
-    title: "Cloud & Analysis",
-    skills: ["Azure AI Services", "NumPy", "Pandas", "Matplotlib", "Seaborn", "EDA"],
+    title: "Tools & DevOps",
+    skills: ["Docker", "Git", "GitHub", "Postman", "CI/CD pipelines", "Jupyter Notebook", "Google Colab", "VS Code"],
   },
 ];
 
